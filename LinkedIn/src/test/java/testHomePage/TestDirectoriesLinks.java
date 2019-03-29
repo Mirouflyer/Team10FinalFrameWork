@@ -1,20 +1,20 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
-import homePageLinks.FindAColleague;
-import org.openqa.selenium.support.FindBy;
+import homePageLinks.DirectoriesLinks;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestFindACollegue extends CommonAPI {
+public class TestDirectoriesLinks extends CommonAPI {
 
     @Test
-    public void findACollegue() throws Exception{
+    public void diretoriesLinks() throws Exception{
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        FindAColleague findAColleague = PageFactory.initElements(driver,FindAColleague.class);
-        findAColleague.findAcollegue("Eduardo","Arus");
+        DirectoriesLinks directoriesLinks = PageFactory.initElements(driver,DirectoriesLinks.class);
+        directoriesLinks.clickOnDirectoriesButton();
     }
+
 }

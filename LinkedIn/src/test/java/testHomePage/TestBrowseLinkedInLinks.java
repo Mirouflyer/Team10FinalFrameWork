@@ -1,20 +1,19 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
-import homePageLinks.DirectoriesLinks;
+import homePageLinks.BrowseLinkedInLinks;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestDirectoriesLinks extends CommonAPI {
+public class TestBrowseLinkedInLinks extends CommonAPI {
 
     @Test
-    public void diretoriesLinks() throws Exception{
+    public void browseLinkedInLinks() throws Exception{
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        DirectoriesLinks directoriesLinks = PageFactory.initElements(driver,DirectoriesLinks.class);
-        directoriesLinks.clickOnDirectoriesButton();
+        BrowseLinkedInLinks browseLinkedInLinks = PageFactory.initElements(driver,BrowseLinkedInLinks.class);
+        browseLinkedInLinks.clickOnBrowseLinkedInButton();
     }
-
 }

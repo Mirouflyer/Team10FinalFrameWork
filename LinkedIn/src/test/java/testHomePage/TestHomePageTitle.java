@@ -1,16 +1,18 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestForgetPassWordButton extends CommonAPI {
+public class TestHomePageTitle extends CommonAPI {
 
     @Test
-    public void forgetPassWordButton(){
+    public void homePageTitle(){
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        clickOnXpath("//a[@class='link-forgot-password']");
+        String title = driver.getTitle();
+        Assert.assertEquals(title,"LinkedIn: Log In or Sign Up");
     }
 }

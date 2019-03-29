@@ -19,16 +19,11 @@ public class LinkedMemberDirectory extends CommonAPI {
 
     public void clickOnLinkedMemberDirectoryWebElement()throws Exception{
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        //List<WebElement> list = linkedMemberDirectoryButtons;
         for(WebElement element:getLinkedMemberDirectoryButtons()){
 
                element.click();
                 Thread.sleep(2000);
-
-              driver.navigate().back();
-
-
-
+                driver.navigate().back();
         }
     }
 }

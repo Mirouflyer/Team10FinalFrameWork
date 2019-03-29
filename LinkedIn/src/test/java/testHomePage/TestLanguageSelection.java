@@ -1,4 +1,4 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
 import homePageLinks.LanguageSelection;

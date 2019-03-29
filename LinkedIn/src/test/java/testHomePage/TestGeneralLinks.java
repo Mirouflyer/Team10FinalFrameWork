@@ -1,19 +1,20 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
-import homePageLinks.LinkedInC2109Links;
+import homePageLinks.GeneralLinks;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestLinkedInC2109Links extends CommonAPI {
+public class TestGeneralLinks extends CommonAPI {
 
     @Test
-    public void linkedInC2019Links() throws Exception{
+    public void generalHomePageLinks() throws Exception {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        LinkedInC2109Links linkedInC2109Links = PageFactory.initElements(driver,LinkedInC2109Links.class);
-        linkedInC2109Links.clickOnLinkedInC2019Button();
+        GeneralLinks generalHomePageLinks = PageFactory.initElements(driver, GeneralLinks.class);
+        generalHomePageLinks.clickGeneralButton();
     }
+
 }

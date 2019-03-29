@@ -1,19 +1,19 @@
-package TestHomePage;
+package testHomePage;
 
 import base.CommonAPI;
-import homePageLinks.BusinessSolutionsLinks;
+import homePageLinks.FindAColleague;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestBusinessSolutionsLinks extends CommonAPI {
+public class TestFindACollegue extends CommonAPI {
 
     @Test
-    public void businessSolutions() throws Exception{
+    public void findACollegue() throws Exception{
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        BusinessSolutionsLinks businessSolutionsLinks = PageFactory.initElements(driver,BusinessSolutionsLinks.class);
-        businessSolutionsLinks.clickBusinessSolutionsButton();
+        FindAColleague findAColleague = PageFactory.initElements(driver,FindAColleague.class);
+        findAColleague.findAcollegue("Eduardo","Arus");
     }
 }
