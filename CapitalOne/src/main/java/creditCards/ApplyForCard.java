@@ -43,7 +43,7 @@ public class ApplyForCard extends CommonAPI {
     public static WebElement monthlyRentMortgage;
     @FindBy(xpath = "//button[@id='cashAdvanceYes']")
     public static WebElement cashAdvanceYes;
-    @FindBy(xpath = "//button[@id='paymentDueAlert_Y']")
+    @FindBy(xpath = "//button[@id='cashAdvanceYes']")
     public static WebElement paymentDueAlertYes;
     @FindBy(xpath = "//span[@class='nub-esign']")
     public static WebElement agreeCondition;
@@ -99,10 +99,10 @@ public class ApplyForCard extends CommonAPI {
     public void clickOnApplyNow() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getApplyNow().click();
+
     }
     public void clickOnFirstName(String firstName) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        //String current =driver.getWindowHandle();
         for(String windowHandle : driver.getWindowHandles()){
             driver.switchTo().window(windowHandle);
         }
