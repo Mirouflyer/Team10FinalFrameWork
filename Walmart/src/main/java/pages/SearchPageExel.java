@@ -1,7 +1,7 @@
 package pages;
 
 import base.CommonAPI;
-import datasource.DataBase;
+import keyword.ExcelReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -9,11 +9,8 @@ import reporting.TestLogger;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
-public class SearchPage extends CommonAPI {
-
-    DataBase dataBase = new DataBase();
+public class SearchPageExel extends CommonAPI {
 
     @FindBy(how = How.CSS, using ="#global-search-input" )
     public static WebElement searchInputWebElement;
@@ -45,14 +42,14 @@ public class SearchPage extends CommonAPI {
         getSearchInputWebElement().clear();
     }
 
-    public void searchItemAndSubmitButton() throws Exception, IOException, SQLException, ClassNotFoundException {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        List<String> list = dataBase.getItemListFromDB();
-        for(int i = 0; i<list.size(); i++){
-            searchFor(list.get(i));
+    public void searchItemsAndSubmitButtonFromExcelFile() throws Exception, IOException, ClassNotFoundException  {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        ExcelReader excelReader = new ExcelReader();
+        String [] list = excelReader.getDataFromExcelFile();
+        for(int i=1; i<list.length; i++) {
+            searchFor(list[i]);
             submitSearchButton();
             clearInput();
         }
     }
-
 }

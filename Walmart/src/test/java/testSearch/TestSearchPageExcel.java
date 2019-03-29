@@ -3,20 +3,20 @@ package testSearch;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import pages.SearchPage;
+import pages.SearchPageExel;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
 import java.io.IOException;
-import java.sql.SQLException;
+import java.util.concurrent.CancellationException;
 
-public class TestSearchPage extends CommonAPI {
+public class TestSearchPageExcel extends CommonAPI {
 
     @Test
-    public void searchPage() throws Exception, IOException, SQLException, ClassNotFoundException {
+    public void searchPageExcel() throws Exception, IOException, CancellationException {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
-        searchPage.searchItemAndSubmitButton();
+        SearchPageExel searchPageExel = PageFactory.initElements(driver,SearchPageExel.class);
+        searchPageExel.searchItemsAndSubmitButtonFromExcelFile();
     }
 }
