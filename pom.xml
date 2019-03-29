@@ -15,6 +15,7 @@
         <module>CapitalOne</module>
         <module>CNN</module>
         <module>Walmart</module>
+        <module>LinkedIn</module>
     </modules>
 
     <dependencyManagement>
