@@ -23,8 +23,8 @@ public class MenuPage extends CommonAPI {
         System.out.println("********************************************************\n");
 
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        connectToSqlDB.insertDataFromArrayListToSqlTable(listOfMenu,"WalmartItemList","items",filePath);
-        actualData = connectToSqlDB.readDataBase("WalmartItemList","items", filePath);
+        connectToSqlDB.insertDataFromArrayListToSqlTable(listOfMenu,"WalmartMenuItemList","items",filePath);
+        actualData = connectToSqlDB.readDataBase("WalmartMenuItemList","items", filePath);
         System.out.println("List of Walmart Menu from Mysql Databae :");
         for(String data : actualData){
             System.out.println(data);

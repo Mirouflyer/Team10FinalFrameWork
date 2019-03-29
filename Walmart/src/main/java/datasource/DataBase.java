@@ -12,7 +12,8 @@ public class DataBase {
     static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
     public static void insertDataInDB(){
         List<String> list = getItemValue();
-        connectToSqlDB.insertDataFromArrayListToSqlTable(list,"WalmartItemList","items",filePath);
+       // connectToSqlDB.insertDataFromArrayListToSqlTable(list,"WalmartItemList","items",filePath);
+        connectToSqlDB.insertDataFromArrayListToSqlTable(list,"WalmartMenuItemList","items",filePath);
 
     }
 
@@ -36,14 +37,20 @@ public class DataBase {
         return list ;
     }
 
+    public List<String> getItemListFromDB1() throws Exception, IOException, SQLException, ClassNotFoundException{
+        List<String> list = new ArrayList<String>();
+        list = connectToSqlDB.readDataBase("WalmartMenuItemList","items",filePath);
+        return list ;
+    }
+
     public static void main(String[] args) throws  Exception, IOException, SQLException, ClassNotFoundException {
-        insertDataInDB();
+       // insertDataInDB();
 
 
-//        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-//        List<String> list = connectToSqlDB.readDataBase("WalmartItemList","items");
-//        for(String st:list){
-//            System.out.println(st);
-//        }
+        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+        List<String> list = connectToSqlDB.readDataBase("WalmartItemList","items",filePath);
+        for(String st:list){
+            System.out.println(st);
+        }
     }
 }

@@ -27,7 +27,8 @@
             <!--<class name="testOperation.TestSignUp"/>-->
             <!--<class name="testOperation.TestSignIn"/>-->
             <!--<class name="testOperation.TestKeywordDriven"/>-->
-            <class name="testHomePageElementText.TestHomePageElementText"/>
+            <!--<class name="testHomePageElementText.TestHomePageElementText"/>-->
+            <class name="testSearchPage.TestSearchCollegueByDB"/>
 
         </classes>
     </test>
