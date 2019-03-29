@@ -13,19 +13,19 @@
 
     <test name = "LinkedIn Home">
         <classes>
-            <!--<class name="testHomePage.TestHomePageTitle"/>-->
-            <!--<class name="testHomePage.TestBrowseLinkedInLinks"/>-->
-            <!--<class name="testHomePage.TestBusinessSolutionsLinks"/>-->
-            <!--<class name="testHomePage.TestDirectoriesLinks"/>-->
-            <!--<class name="testHomePage.TestFindACollegue"/>-->
-            <!--<class name="testHomePage.TestForgetPassWordButton"/>-->
-            <!--<class name="testHomePage.TestGeneralLinks"/>-->
-            <!--<class name="testHomePage.TestLanguageSelection"/>-->
-            <!--<class name="testHomePage.TestLinkedInC2109Links"/>-->
-            <!--<class name="testHomePage.TestLinkedMemberDirectory"/>-->
-            <!--<class name="testOperation.TestFindCollegue"/>-->
-            <!--<class name="testOperation.TestSignUp"/>-->
-            <!--<class name="testOperation.TestSignIn"/>-->
+            <class name="testHomePage.TestHomePageTitle"/>
+            <class name="testHomePage.TestBrowseLinkedInLinks"/>
+            <class name="testHomePage.TestBusinessSolutionsLinks"/>
+            <class name="testHomePage.TestDirectoriesLinks"/>
+            <class name="testHomePage.TestFindACollegue"/>
+            <class name="testHomePage.TestForgetPassWordButton"/>
+            <class name="testHomePage.TestGeneralLinks"/>
+            <class name="testHomePage.TestLanguageSelection"/>
+            <class name="testHomePage.TestLinkedInC2109Links"/>
+            <class name="testHomePage.TestLinkedMemberDirectory"/>
+            <class name="testOperation.TestFindCollegue"/>
+            <class name="testOperation.TestSignUp"/>
+            <class name="testOperation.TestSignIn"/>
             <class name="testOperation.TestKeywordDriven"/>
 
         </classes>
