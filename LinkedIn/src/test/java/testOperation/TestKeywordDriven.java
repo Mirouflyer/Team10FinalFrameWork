@@ -1,19 +1,22 @@
 package testOperation;
 
 import base.CommonAPI;
-import operation.SignIn;
+import keywordDriven.Features;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestSignIn extends CommonAPI {
+import java.io.IOException;
+
+public class TestKeywordDriven extends CommonAPI {
 
     @Test
-    public void signIn(){
+    public void keywordDriven() throws IOException, InterruptedException {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        SignIn signIn = PageFactory.initElements(driver, SignIn.class);
-        signIn.signIn("kingArtur@gmail,com","123456");
+        Features features = PageFactory.initElements(driver,Features.class);
+        features.selectFeatures(driver);
     }
 }

@@ -10,7 +10,7 @@ public class ExcelReader extends CommonAPI {
     DataReader dr = new DataReader();
 
     public String[] getStepsTestExcelFile () throws IOException {
-        String path = System.getProperty("../Walamrt/data/testSteps.xls");
+        String path = System.getProperty("user.dir")+"/data/keyword.xls";;
         String[] data = dr.fileReader2(path, 0);
         return data;
     }

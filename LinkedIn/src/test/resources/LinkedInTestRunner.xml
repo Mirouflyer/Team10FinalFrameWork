@@ -25,7 +25,8 @@
             <!--<class name="testHomePage.TestLinkedMemberDirectory"/>-->
             <!--<class name="testOperation.TestFindCollegue"/>-->
             <!--<class name="testOperation.TestSignUp"/>-->
-            <class name="testOperation.TestSignIn"/>
+            <!--<class name="testOperation.TestSignIn"/>-->
+            <class name="testOperation.TestKeywordDriven"/>
 
         </classes>
     </test>
