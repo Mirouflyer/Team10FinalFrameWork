@@ -14,7 +14,7 @@
     <test name = "#ebay Home">
         <classes>
             <class name="searchItems.TestSearchItems"/>
-            <class name="searchItems.TestSearchItems">
+            <class name="searchItems.TestSearchItems"/>
             <class name="creatAccountTest.TestRegistration"/>
             <class name="title.EbayHome"/>
             <class name="advancedSearch.TestLocationOption"/>
