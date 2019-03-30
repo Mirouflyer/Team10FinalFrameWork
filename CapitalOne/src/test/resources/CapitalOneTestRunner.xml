@@ -23,7 +23,11 @@
             <!--<class name="testHomePage.TestTitle"></class>-->
             <!--<class name="testAccessToAccount.TestOnLineAccess"></class>-->
             <!--<class name="testCreditCards.TestApplyCard"></class>-->
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 82c20db66bc5b33a851946485944ffdbc6b7d4ef
         </classes>
     </test>
 
