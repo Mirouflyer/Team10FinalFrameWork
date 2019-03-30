@@ -22,10 +22,6 @@
             <class name="testSearchInHPageDB.TestSearchTitlesFromDB"></class>
             <class name="testSearch.TestSearchXpath"></class>
             <class name="testfindElements.TestListElements"></class>
-<<<<<<< HEAD
-=======
-
->>>>>>> 91c3e3c7889ea56a14f5e2983cd6f3701914feb1
         </classes>
     </test>
 
