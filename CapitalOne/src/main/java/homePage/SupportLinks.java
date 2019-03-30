@@ -78,9 +78,9 @@ public class SupportLinks extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         clickOnCreditCardSupport();
         clickOnAccessibilityAssistance();
-        clickOnAskCapitalOne();
         clickOnCallU();
         clickOnResourcesForMilitary();
         clickOnSetUpEno();
+        clickOnAskCapitalOne();
     }
 }

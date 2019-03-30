@@ -18,12 +18,13 @@
             <!--<class name="testHomePage.TestProductLinks"></class>-->
             <!--<class name="testHomePage.TestSupportLinks"></class>-->
             <!--<class name="testHomePage.TestAboutLinks"></class>-->
-            <!--<class name="testHomePage.TestOnTheGo"></class>-->
+            <class name="testHomePage.TestOnTheGo"></class>
             <!--<class name="testSignIn.TestLogIn"></class>-->
             <!--<class name="testHomePage.TestTitle"></class>-->
             <!--<class name="testAccessToAccount.TestOnLineAccess"></class>-->
             <!--<class name="testCreditCards.TestApplyCard"></class>-->
-            <class name="testKeyWord.TestGetWebElements"></class>
+            <!--<class name="testSignIn.TestLogIn"></class>-->
+            <!--<class name="testKeyWord.TestGetWebElements"></class>-->
         </classes>
     </test>
 

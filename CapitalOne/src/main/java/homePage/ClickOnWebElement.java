@@ -29,13 +29,13 @@ public class ClickOnWebElement extends CommonAPI {
         @FindBy(how = How.ID, using = "no-acct-uid")
         public static WebElement userName;
 
-        @FindBy(how = How.ID, using = "no-acct-pw")
+        @FindBy(how = How.XPATH, using = "//input[@class='darkPlaceholder login-password ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength']")
         public static WebElement passWord;
 
         @FindBy(how = How.XPATH, using = "site-footer__link")
         public static WebElement creditWise;
 
-        @FindBy(how = How.XPATH, using = "//*[@lazy-load-src='/assets/compass/contentful/1h6lncjoeq27/4Jkliv52xGKauGO8MCUgSg/4a23bd34881321f66bc968a9b9d25486/tablet-icon.png']")
+        @FindBy(how = How.XPATH, using = "//body[@class='ng-scope']//div[@class='ng-scope']//div[@class='ng-scope']//div[2]//div[1]//h2[1]//a[1]")
          public static WebElement preQualified;
 
         @FindBy(how = How.XPATH, using = "//*[@lazy-load-src='/assets/compass/contentful/1h6lncjoeq27/5GH9ONeOn6S8O044Yw4sa2/d9f393ab2cbf0fb6bb7a38cb0762ffe0/icon-card-venture-new.png']")
@@ -120,14 +120,18 @@ public class ClickOnWebElement extends CommonAPI {
         getUserName().click();
         driver.navigate().back();
     }
-    public void clickOnPassWord() {
-        getPassWord().click();
+    public void clickOnPassWord(String value) throws InterruptedException {
+        getPassWord().sendKeys(value);
+        Thread.sleep(1500);
         driver.navigate().back();
+        Thread.sleep(1500);
     }
-    public void clickOnPreQualified(){
+    public void clickOnPreQualified() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getPreQualified().click();
+        Thread.sleep(1500);
         driver.navigate().back();
+        Thread.sleep(1500);
     }
     public void clickOnBackRewards(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -150,19 +154,19 @@ public class ClickOnWebElement extends CommonAPI {
         driver.navigate().back();
     }
 
-    public void useClickMethods(){
+    public void useClickMethods() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         clickOnSearchButton();
         clickOnSupportButton();
         clickOnLocationButton();
         clickOnSignInButton();
         clickOnUserName();
-        clickOnPassWord();
-        clickOnPreQualified();
-        clickOnBackRewards();
-        clickOnCreditScore();
-        clickOnForgetInfo();
-        clickOnRememberMe();
+//        clickOnPassWord("kkkkk123");
+//        clickOnPreQualified();
+//        clickOnBackRewards();
+//        clickOnCreditScore();
+//        clickOnForgetInfo();
+//        clickOnRememberMe();
 
     }
 }
