@@ -5,7 +5,7 @@
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
-    <parameter name="os" value="Windows"/>
+    <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="30.0"/>
@@ -14,14 +14,14 @@
     <test name = "CNN Home">
         <classes>
 
-            <!--<class name="testHomePage.TestBigTitles"></class>-->
-            <!--<class name="testHomePage.TestTitle"></class>-->
-            <!--<class name="testHomePage.TestHpWebElements"></class>-->
-            <!--<class name="testHomePage.TestListOfWebElements"></class>-->
-            <!--<class name="testMenu.TestCnnMenu"></class>-->
+            <class name="testHomePage.TestBigTitles"></class>
+            <class name="testHomePage.TestTitle"></class>
+            <class name="testHomePage.TestHpWebElements"></class>
+            <class name="testHomePage.TestListOfWebElements"></class>
+            <class name="testMenu.TestCnnMenu"></class>
             <class name="testSearchInHPageDB.TestSearchTitlesFromDB"></class>
-            <!--<class name="testSearch.TestSearchXpath"></class>-->
-            <!--<class name="testfindElements.TestListElements"></class>-->
+            <class name="testSearch.TestSearchXpath"></class>
+            <class name="testfindElements.TestListElements"></class>
         </classes>
     </test>
 
