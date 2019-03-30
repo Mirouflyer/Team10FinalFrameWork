@@ -22,8 +22,8 @@
             <!--<class name="testSignIn.TestLogIn"></class>-->
             <!--<class name="testHomePage.TestTitle"></class>-->
             <!--<class name="testAccessToAccount.TestOnLineAccess"></class>-->
-            <class name="testCreditCards.TestApplyCard"></class>
-
+            <!--<class name="testCreditCards.TestApplyCard"></class>-->
+            <class name="testKeyWord.TestGetWebElements"></class>
         </classes>
     </test>
 
