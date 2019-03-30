@@ -22,13 +22,11 @@
             <class name="testHomePage.TestGeneralLinks"/>
             <class name="testHomePage.TestLanguageSelection"/>
             <class name="testHomePage.TestLinkedInC2109Links"/>
+            <class name="testHomePage.TestLinkedMemberDirectory"/>
             <class name="testOperation.TestFindCollegue"/>
             <class name="testOperation.TestSignUp"/>
             <class name="testOperation.TestSignIn"/>
             <class name="testOperation.TestKeywordDriven"/>
-            <class name="testHomePageElementText.TestHomePageElementText"/>
-            <class name="testSearchPage.TestSearchCollegueByDB"/>
-            <class name="testHomePageElementText.TestLinkedLinkMember"/>
 
         </classes>
     </test>
