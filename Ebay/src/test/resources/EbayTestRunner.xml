@@ -13,7 +13,12 @@
 
     <test name = "#ebay Home">
         <classes>
+<<<<<<< HEAD
             <class name="searchItems.TestSearchItems"/>
+=======
+
+            <class name="searchItems.TestSearchItems"></class>
+>>>>>>> 91c3e3c7889ea56a14f5e2983cd6f3701914feb1
             <class name="creatAccountTest.TestRegistration"/>
             <class name="title.EbayHome"/>
             <class name="advancedSearch.TestLocationOption"/>
@@ -26,6 +31,10 @@
             <class name="testLogOut.TestLogOut"/>
             <class name="menu.MenuTest"/>
             <class name="testLogIn.TestLogIn"/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 91c3e3c7889ea56a14f5e2983cd6f3701914feb1
         </classes>
     </test>
 

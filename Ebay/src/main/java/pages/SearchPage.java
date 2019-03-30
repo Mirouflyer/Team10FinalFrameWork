@@ -66,7 +66,6 @@ public class SearchPage {
         }
     }
 
-
     public WebElement getSearchInputField() {
         return searchInputWebElement;
     }
@@ -83,5 +82,4 @@ public class SearchPage {
             getSearchInputField().clear();
         }
     }
-
 }

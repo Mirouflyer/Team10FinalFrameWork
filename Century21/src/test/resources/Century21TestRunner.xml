@@ -13,7 +13,11 @@
 
     <test name = "#Century21 Home">
         <classes>
+<<<<<<< HEAD
             <class name="title.Century21Home"/>
+=======
+             <class name="title.Century21Home"/>
+>>>>>>> 91c3e3c7889ea56a14f5e2983cd6f3701914feb1
             <class name="testAccount.TestRegistration"/>
             <class name="testAccount.TestLogIn"/>
             <class name="menu.MenuTest"/>

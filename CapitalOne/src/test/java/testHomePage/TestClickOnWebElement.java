@@ -9,7 +9,7 @@ import reporting.TestLogger;
 
 public class TestClickOnWebElement extends CommonAPI {
     @Test
-    public void clickOnElement(){
+    public void clickOnElement() throws InterruptedException {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         ClickOnWebElement clickOnWebElement = PageFactory.initElements(driver,ClickOnWebElement.class);
