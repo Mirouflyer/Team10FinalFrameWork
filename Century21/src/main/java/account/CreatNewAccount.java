@@ -72,11 +72,11 @@ public class CreatNewAccount {
     @FindBy(how = How.XPATH, using = "//div[@class='custom-checkbox']")
     public static WebElement checkEmailReferences;
 
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-checkbox']//input[@type='checkbox']")
+    //div[@class='d-flex flex-column flex-wrap interests']//label
+    @FindBy(how = How.XPATH, using = " //div[@class='d-flex flex-column flex-wrap interests']//input[@type='checkbox']")
     List<WebElement> interestedTopics;
 
-    @FindBy(how = How.XPATH, using = "//button[@name='submit-register-preferences']")
+    @FindBy(how = How.XPATH, using = "//button[@class='btn btn-lg btn-block btn-dark']")
     public static WebElement accountCreationButton;
 
 
@@ -269,10 +269,10 @@ public class CreatNewAccount {
             String text = element.getText();
             element.click();
             Thread.sleep(2000);
-            element.click();
-            Thread.sleep(1000);
-            interestedOptionList.add(text);
-            System.out.println(text);
+//            element.click();
+//            Thread.sleep(1000);
+//            interestedOptionList.add(text);
+//            System.out.println(text);
         }
     }
 
@@ -280,10 +280,10 @@ public class CreatNewAccount {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         clickOnRegisterButton();
         submitCreateAccountButton();
-        enterFirstName("biroylok");
-        enterLastName("Emoraynuhjl");
-        enterPhoneNumber("3472245431");
-        enterEmail("biliurly20@gamil.com");
+        enterFirstName("birloylok");
+        enterLastName("Emoddrynuhjl");
+        enterPhoneNumber("3472741431");
+        enterEmail("bdqhqjkwk@gamil.com");
         enterPassword("2255Yuuk*");
         enterConfirmedPassword("2255Yuuk*");
         submitNextStepBUtton();
@@ -297,8 +297,9 @@ public class CreatNewAccount {
         enterDOBMonth("02");
         enterDOBYear("1990");
         submitCheckEmailReferences();
-       // checkAllInterestedElements();
-        Thread.sleep(2000);
+//        checkAllInterestedElements();
+        Thread.sleep(1000);
         submitAccountCreationButton();
+        Thread.sleep(2000);
     }
 }
