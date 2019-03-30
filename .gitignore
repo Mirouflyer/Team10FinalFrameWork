@@ -1,5 +1,5 @@
-# This is to prevent megre conflicts because every workspace is different
-.idea/workspace.xml
+# Created by .ignore support plugin (hsz.mobi)
+### intellij
 .idea/
 *.iml
 *.iws
@@ -43,3 +43,4 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+

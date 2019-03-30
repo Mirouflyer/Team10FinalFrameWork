@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LinkedIn Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value=" 65.0.2"/>
+    <parameter name="url" value="https://www.linkedin.com/"/>
+
+    <test name = "LinkedIn Home">
+        <classes>
+            <class name="testHomePage.TestHomePageTitle"/>
+            <class name="testHomePage.TestBrowseLinkedInLinks"/>
+            <class name="testHomePage.TestBusinessSolutionsLinks"/>
+            <class name="testHomePage.TestDirectoriesLinks"/>
+            <class name="testHomePage.TestFindACollegue"/>
+            <class name="testHomePage.TestForgetPassWordButton"/>
+            <class name="testHomePage.TestGeneralLinks"/>
+            <class name="testHomePage.TestLanguageSelection"/>
+            <class name="testHomePage.TestLinkedInC2109Links"/>
+            <class name="testOperation.TestFindCollegue"/>
+            <class name="testOperation.TestSignUp"/>
+            <class name="testOperation.TestSignIn"/>
+            <class name="testOperation.TestKeywordDriven"/>
+
+        </classes>
+    </test>
+
+</suite>
