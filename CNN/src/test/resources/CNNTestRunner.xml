@@ -14,14 +14,15 @@
     <test name = "CNN Home">
         <classes>
 
-            <!--<class name="testHomePage.TestBigTitles"></class>-->
-            <!--<class name="testHomePage.TestTitle"></class>-->
-            <!--<class name="testHomePage.TestHpWebElements"></class>-->
-            <!--<class name="testHomePage.TestListOfWebElements"></class>-->
-            <!--<class name="testMenu.TestCnnMenu"></class>-->
+            <class name="testHomePage.TestBigTitles"></class>
+            <class name="testHomePage.TestTitle"></class>
+            <class name="testHomePage.TestHpWebElements"></class>
+            <class name="testHomePage.TestListOfWebElements"></class>
+            <class name="testMenu.TestCnnMenu"></class>
             <class name="testSearchInHPageDB.TestSearchTitlesFromDB"></class>
-            <!--<class name="testSearch.TestSearchXpath"></class>-->
-            <!--<class name="testfindElements.TestListElements"></class>-->
+            <class name="testSearch.TestSearchXpath"></class>
+            <class name="testfindElements.TestListElements"></class>
+
         </classes>
     </test>
 

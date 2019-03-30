@@ -100,14 +100,13 @@ public class AboutLinks extends CommonAPI {
     public void useClickOnAboutLinks() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         clickOnCorporateInformation();
+        // clickOnDiversityInclusion();
+        //clickOnInvestors();
+        //clickOnCanada();
+        //clickOnUk();
         clickOnCareersJobs();
-        clickOnDiversityInclusion();
-        clickOnSustainability();
-        clickOnPress();
-        clickOnInvestors();
-        clickOnCanada();
-        clickOnUk();
-
+        //clickOnSustainability();
+        //clickOnPress();
     }
 
 }

@@ -54,9 +54,9 @@ public class OnTheGo extends CommonAPI {
     public void useClickOnTheGo(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         clickOnCorporateInformation();
-        clickOnCareersJobs();
-        clickOnSustainability();
         clickOnDiversityInclusion();
+        //clickOnCareersJobs();
+        //clickOnSustainability();
     }
 
 
