@@ -2,6 +2,7 @@ package searchPage;
 
 import base.CommonAPI;
 import datasource.DataBase;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import reporting.TestLogger;
@@ -50,10 +51,9 @@ public class SearchCollegueByDB extends CommonAPI {
         getSearchButton().click();
     }
 
-    public void clearSearch(){
+    public void driveBack(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        getFirstNameInput().clear();
-        getLastNameInput().clear();
+        driver.navigate().back();
     }
 
     public void searchItemAndSubmitButton() throws Exception, IOException, SQLException, ClassNotFoundException {
@@ -64,9 +64,7 @@ public class SearchCollegueByDB extends CommonAPI {
             typeFirstName(list.get(i));
             typeLastName(list1.get(i));
             clickOnSearchButton();
-            clearSearch();
+            driveBack();
         }
     }
-
-
 }
