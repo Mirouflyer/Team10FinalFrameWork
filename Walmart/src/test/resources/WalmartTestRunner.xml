@@ -14,10 +14,10 @@
 <test name = "Walmart Home">
     <classes>
         <class name="testHomePageTitle.TestHomePageTitle"/>
-        <!--<class name="testSearch.TestSearchPageDB"/>-->
-        <!--<class name="testSearch.TestSearchPageExcel"/>-->
-        <!--<class name="testMenuSearch.TestMenuSearch"/>-->
-        <!--<class name="testSignIn.TestSignIn"/>-->
+        <class name="testSearch.TestSearchPageDB"/>
+        <class name="testSearch.TestSearchPageExcel"/>
+        <class name="testMenuSearch.TestMenuSearch"/>
+        <class name="testSignIn.TestSignIn"/>
     </classes>
 </test>
 
