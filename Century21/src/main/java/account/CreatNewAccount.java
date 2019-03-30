@@ -73,7 +73,7 @@ public class CreatNewAccount {
     public static WebElement checkEmailReferences;
 
     //div[@class='d-flex flex-column flex-wrap interests']//label
-    @FindBy(how = How.XPATH, using = " //div[@class='d-flex flex-column flex-wrap interests']//input[@type='checkbox']")
+    @FindBy(how = How.XPATH, using = "//div[@class='d-flex flex-column flex-wrap interests']//div[@class='custom-checkbox']") //input[@type='checkbox']")
     List<WebElement> interestedTopics;
 
     @FindBy(how = How.XPATH, using = "//button[@class='btn btn-lg btn-block btn-dark']")
@@ -267,12 +267,12 @@ public class CreatNewAccount {
 
         for (WebElement element : getInterestedTopics()) {
             String text = element.getText();
-            element.click();
-            Thread.sleep(2000);
+//            element.click();
+//            Thread.sleep(1000);
 //            element.click();
 //            Thread.sleep(1000);
 //            interestedOptionList.add(text);
-//            System.out.println(text);
+            System.out.println("*****"+text);
         }
     }
 
@@ -283,7 +283,7 @@ public class CreatNewAccount {
         enterFirstName("birloylok");
         enterLastName("Emoddrynuhjl");
         enterPhoneNumber("3472741431");
-        enterEmail("bdqhqjkwk@gamil.com");
+        enterEmail("byyok6oi7ou74zk@gamil.com");
         enterPassword("2255Yuuk*");
         enterConfirmedPassword("2255Yuuk*");
         submitNextStepBUtton();
@@ -297,7 +297,7 @@ public class CreatNewAccount {
         enterDOBMonth("02");
         enterDOBYear("1990");
         submitCheckEmailReferences();
-//        checkAllInterestedElements();
+        checkAllInterestedElements();
         Thread.sleep(1000);
         submitAccountCreationButton();
         Thread.sleep(2000);
