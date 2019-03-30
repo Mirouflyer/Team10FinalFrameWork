@@ -11,8 +11,5 @@
         <module name="Generic" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Ebay" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

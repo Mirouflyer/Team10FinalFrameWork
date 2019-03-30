@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CNN/CNN.iml" filepath="$PROJECT_DIR$/CNN/CNN.iml" />
       <module fileurl="file://$PROJECT_DIR$/CapitalOne/CapitalOne.iml" filepath="$PROJECT_DIR$/CapitalOne/CapitalOne.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Ebay/Ebay.iml" filepath="$PROJECT_DIR$/Ebay/Ebay.iml" />
     </modules>
   </component>
 </project>

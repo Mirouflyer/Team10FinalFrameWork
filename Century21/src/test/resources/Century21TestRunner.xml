@@ -17,8 +17,10 @@
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItems.TestSearchItems"></class>-->
 
-            <class name="testAccount.TestRegistration"/>
             <!--<class name="title.Century21Home"/>-->
+            <class name="testAccount.TestRegistration"/>
+
+            <!--<class name="testAccount.TestLogIn"/>-->
             <!--<class name="advancedSearch.TestLocationOption"/>-->
             <!--<class name="advancedSearch.TestShowResults"/>-->
             <!--<class name="advancedSearch.TestBuyingFormatsAndCondition"/>-->
@@ -28,7 +30,7 @@
             <!--<class name="advancedSearch.AdvancedSearchUsingKeywords"/>-->
             <!--<class name="logOut.TestLogOut"/>-->
             <!--<class name="menu.MenuTest"/>-->
-            <!--<class name="logIn.TestLogIn"/>-->
+
 
         </classes>
     </test>
