@@ -21,6 +21,7 @@
             <!--<class name="testMenu.TestCnnMenu"></class>-->
             <class name="testSearchInHPageDB.TestSearchTitlesFromDB"></class>
             <!--<class name="testSearch.TestSearchXpath"></class>-->
+            <!--<class name="testfindElements.TestListElements"></class>-->
         </classes>
     </test>
 

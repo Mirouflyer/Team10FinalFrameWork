@@ -23,15 +23,11 @@ public class SearchTitlesFromDB extends CommonAPI {
     public static WebElement search;
     @FindBy(xpath = "//input[@id='search-input-field']")
     public static WebElement typeOnSearch;
-    @FindBy(xpath = "//div[@class='cnn-search__fields']//input[@type='text'] ")
-    public static WebElement search2;
 
     //getters
     public static WebElement getSearch() { return search; }
 
     public static WebElement getTypeOnSearch() { return typeOnSearch; }
-
-    public static WebElement getSearch2() { return search2; }
 
 
     //runMethods
@@ -43,10 +39,6 @@ public class SearchTitlesFromDB extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName())+ " "+ bigTitle);
         getTypeOnSearch().sendKeys(bigTitle,Keys.ENTER);
     }
-    public void searchFor2(String bigTitle) {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName())+ " "+ bigTitle);
-        getSearch2().sendKeys(bigTitle,Keys.ENTER);
-    }
     public void clearInPut(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         getTypeOnSearch().clear();
@@ -56,15 +48,15 @@ public class SearchTitlesFromDB extends CommonAPI {
     public void searchItemAndSubmit() throws Exception, IOException, SQLException, ClassNotFoundException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         List<String> list = dataBase.getItemListFromDB();
-        clickOnSearch();
-        searchFor(list.get(0));
-        driver.findElement(By.xpath("//div[@class='cnn-search__fields']//input[@type='text'] ")).clear();
-//        for (int i = 1; i < list.size(); i++) {
-//            searchFor(list.get(i));
-//            Thread.sleep(1500);
-//            driver.navigate().back();
-//            clearInPut();
-//
-//        }
+
+        //searchFor(list.get(0));
+        for (int i = 0; i < list.size(); i++) {
+            clickOnSearch();
+            clearInPut();
+            searchFor(list.get(i));
+            Thread.sleep(2000);
+            driver.navigate().back();
+            Thread.sleep(2000);
+        }
     }
 }
