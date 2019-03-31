@@ -27,7 +27,9 @@
             <!--<class name="testLogOut.TestLogOut"/>-->
             <!--<class name="menu.MenuTest"/>-->
             <!--<class name="testLogIn.TestLogIn"/>-->
-            <class name="testHomePage.TestBigTitle"/>
+            <!--<class name="testHomePage.TestBigTitle"/>-->
+            <class name="testHomePage.TestCheckHomePage"/>
+
 
         </classes>
     </test>
