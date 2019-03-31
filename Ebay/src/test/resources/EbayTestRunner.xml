@@ -28,7 +28,8 @@
             <!--<class name="menu.MenuTest"/>-->
             <!--<class name="testLogIn.TestLogIn"/>-->
             <!--<class name="testHomePage.TestBigTitle"/>-->
-            <class name="testHomePage.TestCheckHomePage"/>
+            <!--<class name="testHomePage.TestCheckHomePage"/>-->
+            <class name="testHomePage.TestShortcutCustomomerService"/>
 
 
         </classes>
