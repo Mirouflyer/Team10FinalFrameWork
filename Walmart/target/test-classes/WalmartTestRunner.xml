@@ -7,7 +7,7 @@
 <parameter name="cloudEnvName" value="browserstack"/>
 <parameter name="os" value="OS X"/>
 <parameter name="os_version" value="Sierra"/>
-<parameter name="browserName" value="chrome"/>
+<parameter name="browserName" value="firefox"/>
 <parameter name="browserVersion" value=" 65.0.2"/>
 <parameter name="url" value="https://www.walmart.com/"/>
 
@@ -19,8 +19,12 @@
         <!--<class name="testMenuSearch.TestMenuSearch"></class>-->
         <!--<class name="testSignIn.TestSignIn"></class>-->
         <!--<class name="testHomePageLinks.TestWalmartServicesLinks"></class>-->
-        <!--<class name="testHomePageLinks.TestGetToKnowUS"></class>-->
-        <class name="testHomePageLinks.TestWalmartCom"></class>
+        <!--<class name="testHomePageLinks.TestGetToKnowUsLinks"></class>-->
+        <!--<class name="testHomePageLinks.TestWalmartComLinks"></class>-->
+        <!--<class name="testHomePageLinks.TestCustomerServiceLinks"></class>-->
+        <!--<class name="testHomePageLinks.TestInTheSpotlightLinks"></class>-->
+        <class name="testHomePageText.TestCustomerServiceText"></class>
+        <!--<class name="testHomePageText.testGetToKnowUsText"></class>-->
     </classes>
 </test>
 
