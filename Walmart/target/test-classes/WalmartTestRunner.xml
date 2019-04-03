@@ -13,19 +13,21 @@
 
 <test name = "Walmart Home">
     <classes>
-        <!--<class name="testHomePageTitle.TestHomePageTitle"></class>-->
-        <!--<class name="testSearch.TestSearchPageDB"></class>-->
-        <!--<class name="testSearch.TestSearchPageExcel"></class>-->
-        <!--<class name="testMenuSearch.TestMenuSearch"></class>-->
-        <!--<class name="testSignIn.TestSignIn"></class>-->
-        <!--<class name="testHomePageLinks.TestWalmartServicesLinks"></class>-->
-        <!--<class name="testHomePageLinks.TestGetToKnowUsLinks"></class>-->
-        <!--<class name="testHomePageLinks.TestWalmartComLinks"></class>-->
-        <!--<class name="testHomePageLinks.TestCustomerServiceLinks"></class>-->
-        <!--<class name="testHomePageLinks.TestInTheSpotlightLinks"></class>-->
-        <!--<class name="testHomePageText.TestCustomerServiceText"></class>-->
-        <!--<class name="testHomePageText.testGetToKnowUsText"></class>-->
+        <class name="testHomePageTitle.TestHomePageTitle"></class>
+        <class name="testSearch.TestSearchPageDB"></class>
+        <class name="testSearch.TestSearchPageExcel"></class>
+        <class name="testMenuSearch.TestMenuSearch"></class>
+        <class name="testSignIn.TestSignIn"></class>
+        <class name="testHomePageLinks.TestWalmartServicesLinks"></class>
+        <class name="testHomePageLinks.TestGetToKnowUsLinks"></class>
+        <class name="testHomePageLinks.TestWalmartComLinks"></class>
+        <class name="testHomePageLinks.TestCustomerServiceLinks"></class>
+        <class name="testHomePageLinks.TestInTheSpotlightLinks"></class>
+        <class name="testHomePageText.TestCustomerServiceText"></class>
+        <class name="testHomePageText.testGetToKnowUsText"></class>
         <class name="testHomePageText.TestInTheSpotlightText"></class>
+        <class name="testHomePageText.TestWalmartComText"></class>
+        <class name="testHomePageText.TestWalmartServicesText"></class>
     </classes>
 </test>
 
