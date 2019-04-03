@@ -1,67 +1,68 @@
 package testHomePageText;
 
 import base.CommonAPI;
-import homePageText.GetToKnowUsText;
+
+import homePageText.InTheSpotlightText;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class testGetToKnowUsText extends CommonAPI {
+public class TestInTheSpotlightText extends CommonAPI {
 
     @Test
-    public void toKnowUsText() {
+    public void inTheSpotlightText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkGetToKnowUsText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkInTheSpotlightText();
     }
 
     @Test
-    public void ourCompanyText() {
+    public void ellensListText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkOurCompanyText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkEllensListText();
     }
 
     @Test
-    public void digitalMuseumText() {
+    public void electronicsText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkDigitalMuseumText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkElectronicsText();
     }
 
     @Test
-    public void ourSuppliersText() {
+    public void toysText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkOurSuppliersText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkToysText();
     }
 
     @Test
-    public void sellOnWalmartComText() {
+    public void videoGamesText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkSellOnWalmartComText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkVideoGamesText();
     }
 
     @Test
-    public void advertiseWithUsText() {
+    public void homeProductsText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText.checkAdvertiseWithUsText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkHomeProductsText();
     }
 
     @Test
-    public void careersText() {
+    public void clothingText() {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GetToKnowUsText getToKnowUsText = PageFactory.initElements(driver, GetToKnowUsText.class);
-        getToKnowUsText. checkCareersText();
+        InTheSpotlightText inTheSpotlightText = PageFactory.initElements(driver, InTheSpotlightText.class);
+        inTheSpotlightText.checkClothingText();
     }
 }

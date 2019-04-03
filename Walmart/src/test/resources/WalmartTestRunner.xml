@@ -22,9 +22,10 @@
         <!--<class name="testHomePageLinks.TestGetToKnowUsLinks"></class>-->
         <!--<class name="testHomePageLinks.TestWalmartComLinks"></class>-->
         <!--<class name="testHomePageLinks.TestCustomerServiceLinks"></class>-->
-        <class name="testHomePageLinks.TestInTheSpotlightLinks"></class>
+        <!--<class name="testHomePageLinks.TestInTheSpotlightLinks"></class>-->
         <!--<class name="testHomePageText.TestCustomerServiceText"></class>-->
         <!--<class name="testHomePageText.testGetToKnowUsText"></class>-->
+        <class name="testHomePageText.TestInTheSpotlightText"></class>
     </classes>
 </test>
 
